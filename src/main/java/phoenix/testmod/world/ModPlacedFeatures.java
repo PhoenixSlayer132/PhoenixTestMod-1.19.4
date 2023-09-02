@@ -1,5 +1,7 @@
 package phoenix.testmod.world;
 
+import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import phoenix.testmod.TestMod;
 import phoenix.testmod.block.ModBlocks;
 import net.minecraft.registry.Registerable;
@@ -14,11 +16,22 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> THE_BOYS_PLACED_KEY = registerKey("the_boys_placed");
 
+    public static final RegistryKey<PlacedFeature> BLQ_ORE_PLACED_KEY = registerKey("blq_ore_placed");
+    //public static final RegistryKey<PlacedFeature> PHOEN_ORE_PLACED_KEY = registerKey("phoen_ore_placed");
+    //public static final RegistryKey<PlacedFeature> SUPERN_ORE_PLACED_KEY = registerKey("supern_ore_placed");
+
+
+
+
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, THE_BOYS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.THE_BOYS_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.5f, 0), ModBlocks.THE_BOYS_SAPLING));
+        register(context, BLQ_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLQ_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(3,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-40), YOffset.fixed(62))));
+
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

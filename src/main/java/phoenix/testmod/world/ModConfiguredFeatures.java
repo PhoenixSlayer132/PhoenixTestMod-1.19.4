@@ -5,6 +5,7 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.world.gen.feature.*;
 import phoenix.testmod.TestMod;
+import phoenix.testmod.block.ModBlockTags;
 import phoenix.testmod.block.ModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -26,18 +27,18 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> DAR_ORE_KEY = registerKey("dar_ore");
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
-        RuleTest magmaReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest endstoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest prismarineReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest obsidianReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest magmaReplacables = new TagMatchRuleTest(ModBlockTags.MAGMA_ORE_REPLACABLES);
+        RuleTest endstoneReplacables = new TagMatchRuleTest(ModBlockTags.END_STONE_ORE_REPLACABLES);
+        RuleTest prismarineReplacables = new TagMatchRuleTest(ModBlockTags.PRISMARINE_ORE_REPLACABLES);
+        RuleTest obsidianReplaceables = new TagMatchRuleTest(ModBlockTags.OBSIDIAN_ORE_REPLACABLES);
 
-        List<OreFeatureConfig.Target> overworldBlqOres =
+        List<OreFeatureConfig.Target> overworldBlqOre =
                 List.of(OreFeatureConfig.createTarget(prismarineReplacables, ModBlocks.BLQ_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> netherPhoenOres =
+        List<OreFeatureConfig.Target> netherPhoenOre =
                 List.of(OreFeatureConfig.createTarget(magmaReplacables, ModBlocks.PHOEN_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> endSupernOres =
+        List<OreFeatureConfig.Target> endSupernOre =
                 List.of(OreFeatureConfig.createTarget(endstoneReplacables, ModBlocks.SUPERN_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> endDarOres =
+        List<OreFeatureConfig.Target> endDarOre =
                 List.of(OreFeatureConfig.createTarget(obsidianReplaceables, ModBlocks.DAR_ORE.getDefaultState()));
 
         register(context, THE_BOYS_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
@@ -46,6 +47,7 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(ModBlocks.THE_BOYS_LEAVES),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                     new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, PHOEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlqOre, 2));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
