@@ -47,7 +47,7 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(ModBlocks.THE_BOYS_LEAVES),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                     new TwoLayersFeatureSize(1, 0, 2)).build());
-        register(context, PHOEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlqOre, 2));
+        register(context, BLQ_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlqOre, 2));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

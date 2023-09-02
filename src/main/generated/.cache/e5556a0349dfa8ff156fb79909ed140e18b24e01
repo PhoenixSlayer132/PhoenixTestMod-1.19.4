@@ -1,13 +1,13 @@
-// 1.19.4	2023-08-14T03:10:15.7551784	Test Mod/Block Loot Tables
+// 1.19.4	2023-09-02T11:15:17.7852004	Test Mod/Block Loot Tables
 c07d9f1729915b4b04a5b55d3869dfdd5392895d data\testmod\loot_tables\blocks\blq_ore.json
 11890408f5f95071a01029305456597119c67188 data\testmod\loot_tables\blocks\phoen_block.json
 8691d03e69787799f1954a7bc6ce8966874d0d96 data\testmod\loot_tables\blocks\block_of_raw_dar.json
 ed3be3f8393f966d46b7d57b0ca39d00b2923fbf data\testmod\loot_tables\blocks\block_of_raw_blq.json
 1a64fdffa9ee08af37fd5cbf0a8e148a4d2457d3 data\testmod\loot_tables\blocks\blq_block.json
 652996069f8f17ee43d7207bf19f9e080d9eed13 data\testmod\loot_tables\blocks\dar_ore.json
+5ffc6060e2056a0f15f914e03e5e49d2b0edd5ca data\testmod\loot_tables\blocks\block_of_raw_phoen.json
 bc971625bc95ed56444a0b78eede7c93de08f407 data\testmod\loot_tables\blocks\block_of_raw_supern.json
 cc1e61e7e270cc29ead6c891593ea7701fb285f7 data\testmod\loot_tables\blocks\dar_block.json
-5ffc6060e2056a0f15f914e03e5e49d2b0edd5ca data\testmod\loot_tables\blocks\block_of_raw_phoen.json
 87cb78eb61a6fe8ac2f61152f2abe7b35ebba287 data\testmod\loot_tables\blocks\phoen_ore.json
 a183430348c184ac6d3027a6ac416de20e9a9927 data\testmod\loot_tables\blocks\supern_block.json
 6fd07e67aa603684ab9263a1e59790eb1d79923e data\testmod\loot_tables\blocks\supern_ore.json
