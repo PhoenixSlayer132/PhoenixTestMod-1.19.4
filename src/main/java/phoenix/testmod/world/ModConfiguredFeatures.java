@@ -24,13 +24,13 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLQ_ORE_KEY = registerKey("blq_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PHOEN_ORE_KEY = registerKey("phoen_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SUPERN_ORE_KEY = registerKey("supern_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DAR_ORE_KEY = registerKey("dar_ore");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> DAR_ORE_KEY = registerKey("dar_ore");
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
         RuleTest magmaReplacables = new TagMatchRuleTest(ModBlockTags.MAGMA_ORE_REPLACABLES);
         RuleTest endstoneReplacables = new TagMatchRuleTest(ModBlockTags.END_STONE_ORE_REPLACABLES);
         RuleTest prismarineReplacables = new TagMatchRuleTest(ModBlockTags.PRISMARINE_ORE_REPLACABLES);
-        RuleTest obsidianReplaceables = new TagMatchRuleTest(ModBlockTags.OBSIDIAN_ORE_REPLACABLES);
+        //RuleTest obsidianReplaceables = new TagMatchRuleTest(ModBlockTags.OBSIDIAN_ORE_REPLACABLES);
 
         List<OreFeatureConfig.Target> overworldBlqOre =
                 List.of(OreFeatureConfig.createTarget(prismarineReplacables, ModBlocks.BLQ_ORE.getDefaultState()));
@@ -38,8 +38,8 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(magmaReplacables, ModBlocks.PHOEN_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> endSupernOre =
                 List.of(OreFeatureConfig.createTarget(endstoneReplacables, ModBlocks.SUPERN_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> endDarOre =
-                List.of(OreFeatureConfig.createTarget(obsidianReplaceables, ModBlocks.DAR_ORE.getDefaultState()));
+        //List<OreFeatureConfig.Target> endDarOre =
+                //List.of(OreFeatureConfig.createTarget(obsidianReplaceables, ModBlocks.DAR_ORE.getDefaultState()));
 
         register(context, THE_BOYS_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.THE_BOYS_LOG),
@@ -47,7 +47,10 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(ModBlocks.THE_BOYS_LEAVES),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                     new TwoLayersFeatureSize(1, 0, 2)).build());
+
         register(context, BLQ_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlqOre, 2));
+        register(context, PHOEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPhoenOre, 2));
+        register(context, SUPERN_ORE_KEY, Feature.ORE, new OreFeatureConfig(endSupernOre, 2));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

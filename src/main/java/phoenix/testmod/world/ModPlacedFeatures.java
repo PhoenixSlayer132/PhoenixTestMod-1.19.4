@@ -17,8 +17,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> THE_BOYS_PLACED_KEY = registerKey("the_boys_placed");
 
     public static final RegistryKey<PlacedFeature> BLQ_ORE_PLACED_KEY = registerKey("blq_ore_placed");
-    //public static final RegistryKey<PlacedFeature> PHOEN_ORE_PLACED_KEY = registerKey("phoen_ore_placed");
-    //public static final RegistryKey<PlacedFeature> SUPERN_ORE_PLACED_KEY = registerKey("supern_ore_placed");
+    public static final RegistryKey<PlacedFeature> PHOEN_ORE_PLACED_KEY = registerKey("phoen_ore_placed");
+    public static final RegistryKey<PlacedFeature> SUPERN_ORE_PLACED_KEY = registerKey("supern_ore_placed");
 
 
 
@@ -31,6 +31,12 @@ public class ModPlacedFeatures {
         register(context, BLQ_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLQ_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(3,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-40), YOffset.fixed(62))));
+        register(context, PHOEN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PHOEN_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-40), YOffset.fixed(10))));
+        register(context, SUPERN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SUPERN_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-100), YOffset.fixed(20))));
 
     }
 

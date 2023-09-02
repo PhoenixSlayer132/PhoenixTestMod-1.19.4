@@ -1,5 +1,9 @@
-// 1.19.4	2023-09-02T11:15:17.7821089	Test Mod/testmod
+// 1.19.4	2023-09-02T16:06:46.6212514	Test Mod/testmod
 08cab223fe83f8c78d990dfa1bb001ffa85399a0 data\testmod\worldgen\placed_feature\the_boys_placed.json
+c6199877390ef5f7f0523374502e34afee04e55a data\testmod\worldgen\placed_feature\phoen_ore_placed.json
 b68d97511a7c7f352093b1bc3a2a0192427c0990 data\testmod\worldgen\configured_feature\the_boys.json
+a145c48034ddf1bb3b51e565b91cf32b27102e6d data\testmod\worldgen\configured_feature\phoen_ore.json
 5d43ffeedf45215ae3635ae723f157b8a0f2f65d data\testmod\worldgen\placed_feature\blq_ore_placed.json
+995b3c87f2770830bb067bbe65a70e7f408c9de4 data\testmod\worldgen\placed_feature\supern_ore_placed.json
 4042432df6ac97389d4cdc3e0a0f7fefc2e85508 data\testmod\worldgen\configured_feature\blq_ore.json
+b7d4d8eee728b2baad6393028a7fb431197fc5c7 data\testmod\worldgen\configured_feature\supern_ore.json
