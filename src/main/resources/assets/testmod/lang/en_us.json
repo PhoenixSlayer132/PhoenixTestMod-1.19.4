@@ -1,0 +1,36 @@
+{
+  "item.testmod.steven_harvard": "Steven Harvard",
+
+  "item.testmod.raw_blq": "Raw Blq",
+  "item.testmod.raw_dar": "Raw Dar",
+  "item.testmod.raw_supern": "Raw Supern",
+  "item.testmod.raw_phoen": "Raw Phoen",
+
+  "block.testmod.block_of_raw_blq": "Block of raw Blq",
+  "block.testmod.block_of_raw_supern": "Block of raw Supern",
+  "block.testmod.block_of_raw_phoen": "Block of raw Phoen",
+  "block.testmod.block_of_raw_dar": "Block of raw Dar",
+
+  "item.testmod.blqgot": "Blqgot",
+  "item.testmod.dargot": "Dargot",
+  "item.testmod.superngot": "Superngot",
+  "item.testmod.phoengot": "Phoengot",
+
+  "block.testmod.blq_block": "Blq Block",
+  "block.testmod.dar_block": "Dar Block",
+  "block.testmod.supern_block": "Supern Block",
+  "block.testmod.phoen_block": "Phoen Block",
+
+  "block.testmod.blq_ore": "Blq Ore",
+  "block.testmod.dar_ore": "Dar Ore",
+  "block.testmod.supern_ore": "Supern Ore",
+  "block.testmod.phoen_ore": "Phoen Ore",
+
+  "block.testmod.the_boys_log": "The Boys Log",
+  "block.testmod.the_boys_wood": "The Boys Wood",
+  "block.testmod.stripped_the_boys_log": "Stripped The Boys Log",
+  "block.testmod.stripped_the_boys_wood": "Stripped The Boys Wood",
+  "block.testmod.the_boys_planks": "The Boys Planks",
+  "block.testmod.the_boys_leaves": "The Boys Leaves",
+  "block.testmod.the_boys_sapling": "The Boys Sapling"
+}

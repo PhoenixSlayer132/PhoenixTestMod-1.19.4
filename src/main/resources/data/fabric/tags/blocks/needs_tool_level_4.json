@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:blq_ore",
+    "testmod:dar_ore",
+    "testmod:supern_ore",
+    "testmod:phoen_ore",
+    "testmod:blq_block",
+    "testmod:dar_block",
+    "testmod:supern_block",
+    "testmod:phoen_block",
+    "testmod:block_of_raw_blq",
+    "testmod:block_of_raw_dar",
+    "testmod:block_of_raw_supern",
+    "testmod:block_of_raw_phoen"
+  ]
+}

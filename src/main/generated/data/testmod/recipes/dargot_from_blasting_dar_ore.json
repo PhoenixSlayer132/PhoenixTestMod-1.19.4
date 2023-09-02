@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "Phoenix Testmod",
+  "ingredient": {
+    "item": "testmod:dar_ore"
+  },
+  "result": "testmod:dargot"
+}
