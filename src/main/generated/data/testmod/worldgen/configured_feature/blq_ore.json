@@ -10,7 +10,7 @@
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:prismarine"
+          "tag": "#testmod:prismarine_ore_replaceables"
         }
       }
     ]
