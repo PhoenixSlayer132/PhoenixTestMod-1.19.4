@@ -49,8 +49,8 @@ public class ModConfiguredFeatures {
                     new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, BLQ_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlqOre, 2));
-        register(context, PHOEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPhoenOre, 20));
-        register(context, SUPERN_ORE_KEY, Feature.ORE, new OreFeatureConfig(endSupernOre, 20));
+        register(context, PHOEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPhoenOre, 2));
+        register(context, SUPERN_ORE_KEY, Feature.ORE, new OreFeatureConfig(endSupernOre, 2));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

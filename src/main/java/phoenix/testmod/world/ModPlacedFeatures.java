@@ -32,10 +32,10 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(3,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-40), YOffset.fixed(62))));
         register(context, PHOEN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PHOEN_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(20,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(27), YOffset.fixed(36))));
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(27), YOffset.fixed(30))));
         register(context, SUPERN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SUPERN_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(50,
+                ModOrePlacement.modifiersWithCount(1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-100), YOffset.fixed(20))));
 
     }
