@@ -34,16 +34,16 @@ public class ModBlocks {
     public static final Block SUPERN_BLOCK = registerBlock("supern_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F, 7.0F).requiresTool()), ModItemGroup.PHOENIX_TESTMOD);
     public static final Block BLQ_ORE = registerBlock("blq_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(30.0f, 1200.0f).requiresTool(),
                     UniformIntProvider.create(1, 2)), ModItemGroup.PHOENIX_TESTMOD);
     public static final Block DAR_ORE = registerBlock("dar_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(30.0f, 1200.0f).requiresTool(),
                     UniformIntProvider.create(1, 2)), ModItemGroup.PHOENIX_TESTMOD);
     public static final Block PHOEN_ORE = registerBlock("phoen_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(30.0f, 1200.0f).requiresTool(),
                     UniformIntProvider.create(1, 2)), ModItemGroup.PHOENIX_TESTMOD);
     public static final Block SUPERN_ORE = registerBlock("supern_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(30.0f, 1200.0f).requiresTool(),
                     UniformIntProvider.create(1, 2)), ModItemGroup.PHOENIX_TESTMOD);
     public static final Block THE_BOYS_LOG = registerBlock("the_boys_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.PHOENIX_TESTMOD);

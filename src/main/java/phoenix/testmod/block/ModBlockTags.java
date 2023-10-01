@@ -11,8 +11,8 @@ public class ModBlockTags {
     public static final TagKey<Block> SUPERN_ORE = TagKey.of(RegistryKeys.BLOCK, new Identifier("testmod", "supern_ore"));
     public static final TagKey<Block> DAR_ORE = TagKey.of(RegistryKeys.BLOCK, new Identifier("testmod", "dar_ore"));
 
-    public static final TagKey<Block> MAGMA_ORE_REPLACABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "magma_block"));
-    public static final TagKey<Block> PRISMARINE_ORE_REPLACABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "prismarine"));
-    public static final TagKey<Block> END_STONE_ORE_REPLACABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "end_stone"));
-    public static final TagKey<Block> OBSIDIAN_ORE_REPLACABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "obsidian"));
+    public static final TagKey<Block> MAGMA_ORE_REPLACEABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "magma_block"));
+    public static final TagKey<Block> PRISMARINE_ORE_REPLACEABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "prismarine"));
+    public static final TagKey<Block> END_STONE_ORE_REPLACEABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "end_stone"));
+    public static final TagKey<Block> OBSIDIAN_ORE_REPLACEABLES = TagKey.of(RegistryKeys.BLOCK, new Identifier("minecraft", "obsidian"));
 }
